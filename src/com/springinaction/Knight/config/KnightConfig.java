@@ -12,6 +12,8 @@ import com.springinaction.Knight.SlayDragonQuest;
 /**
  * @author linyk3
  * Spring 使用 Java 配置 来装配 bean
+ * 通过这个配置来控制Bean之间的联系.
+ * 这里将quest 注入 Knight, 将System.out注入Quest
  */
 @Configuration
 public class KnightConfig {
