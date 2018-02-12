@@ -1,5 +1,5 @@
 /*≥Ã–Ú«Âµ• 1.3*/
-package com.springinaction;
+package com.springinaction.Knight;
 
 public class BraveKnight implements Knight{
 	private Quest quest;
