@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 import com.springinaction.Knight.BraveKnight;
 import com.springinaction.Knight.Knight;
+import com.springinaction.Knight.Minstrel;
 import com.springinaction.Knight.Quest;
 import com.springinaction.Knight.SlayDragonQuest;
 
@@ -20,7 +21,7 @@ public class KnightConfig {
 
 	@Bean
 	public Knight knight() {
-		return new BraveKnight(quest());
+		return new BraveKnight(quest(),minstrel());
 	}
 	
 	@Bean
@@ -29,5 +30,10 @@ public class KnightConfig {
 		return new SlayDragonQuest(System.out);
 	}
 	
+	//第一次尝试将BraveKnight类和Minstrel类结合起来
+	@Bean
+	public Minstrel minstrel() {
+		return new Minstrel(System.out);
+	}
 	
 }
